@@ -215,7 +215,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../openclassroom" />
     <property name="SearchEverywhereHistoryKey" value="re&#9;FILE&#9;file:///home/user/github/ReactTest/first/node_modules/re-base/src/rebase.js&#10;Rebase&#9;FILE&#9;file:///home/user/github/ReactTest/first/node_modules/re-base/src/rebase.js&#10;firebase&#9;FILE&#9;file:///home/user/github/ReactTest/first/node_modules/re-base/examples/firebase&#10;plu&#9;ACTION&#9;WelcomeScreen.Plugins" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
@@ -257,12 +257,12 @@
       <workItem from="1513244242619" duration="10000" />
       <workItem from="1513244385429" duration="2619000" />
       <workItem from="1513325368363" duration="6747000" />
-      <workItem from="1513759026641" duration="788000" />
+      <workItem from="1513759026641" duration="1134000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48238000" />
+    <option name="totallyTimeSpent" value="48584000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
