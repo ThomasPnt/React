@@ -1,0 +1,101 @@
+.App {
+    text-align: center;
+}
+
+#fait{
+    border-radius: 25%;
+    float: right;
+    background: darkseagreen;
+    border: 2px solid darkgreen;
+}
+
+#delete{
+    border-radius: 25%;
+    float: right;
+    background: lightpink;
+    border: 2px solid darkred;
+}
+
+#delete:hover {
+    background: beige;
+}
+
+#fait:hover{
+    background: greenyellow;
+}
+
+#pasfait{
+    border-radius: 25%;
+    float: right;
+    background: coral;
+    border: 2px solid brown ;
+}
+
+#pasfait:hover{
+    background: darkorange;
+}
+
+#title{
+    width: 50%;
+    margin: 0;
+    display: inline;
+    text-align: center;
+}
+
+.todo{
+    width: 75%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.todo input{
+    float: left;
+}
+
+.todo button{
+    margin-left: 20px;
+    padding: 5px;
+    width: 15%;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .todo{
+        width: 100%;
+    }
+
+    #title{
+        width: 20%;
+    }
+}
