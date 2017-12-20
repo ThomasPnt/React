@@ -13,11 +13,26 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            todos: []
+            todos: [],
         };
     }
 
-    componentDidMount(){
+    //Fonction qui permet de mettre un loading screen tant que le state de todos est vide (le temps que les éléments s'affichent)
+    loading(){
+        if(this.state.todos[0]){
+            return (
+                <List todos={this.state.todos} onTodoToggle={this.todoToggleState.bind(this)}
+                      deleteItem={this.delete.bind(this)}/>
+            )
+        }else{
+            return(
+                <div className="loader">
+                </div>
+            )
+        }
+    }
+
+    componentDidMount() {
         base.syncState(`/`, {
             context: this,
             state: 'todos',
@@ -39,26 +54,26 @@ class App extends Component {
         this.setState({todos: newTodos});
     }
 
-    delete(todo){
-        let list = this.state.todos.filter((_todo)=>{
+    delete(todo) {
+        let list = this.state.todos.filter((_todo) => {
             return _todo !== todo
         });
-        this.setState({ todos : list })
+        this.setState({todos: list})
     }
 
     render() {
         return (
-            <div className="App">
+            <div className="App loader">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo"/>
-                    <h1 className="App-title">Jambon</h1>
+                    <h1 className="App-title">ToDoList</h1>
                 </header>
                 <p className="App-intro">
                     To get started, edit <code>src/App.js</code> and save to reload.
                 </p>
                 <Welcome/>
                 <TodoForm onNewTodo={this.onNewTodo.bind(this)}/>
-                <List todos={this.state.todos} onTodoToggle={this.todoToggleState.bind(this)} deleteItem={this.delete.bind(this)}/>
+                {this.loading()}
             </div>
 
         );
