@@ -1,9 +1,0 @@
-.App .MessageList {
-    box-sizing: border-box;
-    flex: 1;
-}
-
-.MessageList {
-    overflow-y: auto;
-    padding: 4px;
-}
